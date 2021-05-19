@@ -1,0 +1,35 @@
+.user-bar {
+    & a {
+        flex-direction: column;
+        color: #666666;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        display: block;
+    }
+    & a:hover,
+    a:focus,
+    a:active {
+        color: #000;
+    }
+}
+
+.author-links {
+    & a:hover,
+    a:focus,
+    a:active {
+        color: #000;
+        content: "\2192";
+    }
+    & a:hover::after,
+    a:focus::after,
+    a:active::after {
+        font-family: "FontAwesome";
+        content: "\2192";
+        line-height: 0;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 576px) {
+    
+}
